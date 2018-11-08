@@ -8,9 +8,10 @@ spring:
     url: jdbc:mysql://127.0.0.1/springcloud_sell?characterEncoding=utf-8&useSSL=false
   jpa:
     show-sql: true
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
+  rabbitmq:
+    host: 210.22.173.210
+    port: 25672
+    username: guest
+    password: guest
 server:
-  port: 8082
+  port: 8090
